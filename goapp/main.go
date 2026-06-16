@@ -1,4 +1,4 @@
-package imaging_test
+package main
 
 import (
 	"image"
@@ -8,9 +8,9 @@ import (
 	"github.com/godwnwaswa/sm-Imaging"
 )
 
-func Example() {
+func main() {
 	// Open a test image.
-	src, err := imaging.Open("testdata/flowers.png")
+	src, err := imaging.Open("../testdata/house.jpeg")
 	if err != nil {
 		log.Fatalf("failed to open image: %v", err)
 	}
@@ -51,7 +51,7 @@ func Example() {
 	dst = imaging.Paste(dst, img4, image.Pt(200, 200))
 
 	// Save the resulting image as JPEG.
-	err = imaging.Save(dst, "testdata/out_example.jpg")
+	err = imaging.Save(dst, "../testdata/house.jpeg")
 	if err != nil {
 		log.Fatalf("failed to save image: %v", err)
 	}

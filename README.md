@@ -1,9 +1,9 @@
 # Imaging
 
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/disintegration/imaging)](https://pkg.go.dev/github.com/disintegration/imaging)
-[![Build Status](https://travis-ci.org/disintegration/imaging.svg?branch=master)](https://travis-ci.org/disintegration/imaging)
-[![Coverage Status](https://coveralls.io/repos/github/disintegration/imaging/badge.svg?branch=master&service=github)](https://coveralls.io/github/disintegration/imaging?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/disintegration/imaging)](https://goreportcard.com/report/github.com/disintegration/imaging)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/godwnwaswa/sm-Imaging)](https://pkg.go.dev/github.com/godwnwaswa/sm-Imaging)
+[![Build Status](https://travis-ci.org/godwnwaswa/sm-Imaging.svg?branch=master)](https://github.com/godwnwaswa/sm-Imaging)
+[![Coverage Status](https://coveralls.io/repos/github/godwnwaswa/sm-Imaging/badge.svg?branch=master&service=github)](https://github.com/godwnwaswa/sm-Imaging?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/godwnwaswa/sm-Imaging)](https://goreportcard.com/report/github.com/godwnwaswa/sm-Imaging)
 
 Package imaging provides basic image processing functions (resize, rotate, crop, brightness/contrast adjustments, etc.).
 
@@ -12,11 +12,11 @@ as an input, and return a new image of `*image.NRGBA` type (32bit RGBA colors, n
 
 ## Installation
 
-    go get -u github.com/disintegration/imaging
+    go get -u github.com/godwnwaswa/sm-Imaging
 
 ## Documentation
 
-https://pkg.go.dev/github.com/disintegration/imaging
+https://pkg.go.dev/github.com/godwnwaswa/sm-Imaging
 
 ## Usage examples
 
@@ -156,7 +156,7 @@ img, err := imaging.Open("test.jpg", imaging.AutoOrientation(true))
 
 ### What's the difference between `imaging` and `gift` packages?
 
-[imaging](https://github.com/disintegration/imaging)
+[imaging](https://github.com/godwnwaswa/sm-Imaging)
 is designed to be a lightweight and simple image manipulation package.
 It provides basic image processing functions and a few helper functions
 such as `Open` and `Save`. It consistently returns *image.NRGBA image 
@@ -178,7 +178,7 @@ import (
 	"image/color"
 	"log"
 
-	"github.com/disintegration/imaging"
+	"github.com/godwnwaswa/sm-Imaging"
 )
 
 func main() {
